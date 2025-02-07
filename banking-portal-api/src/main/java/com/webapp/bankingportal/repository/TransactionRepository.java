@@ -9,7 +9,7 @@ import com.webapp.bankingportal.entity.Transaction;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-    // Add any custom query methods here, if needed test
+    // Add any custom query methods here, if needed test test
 	
     List<Transaction> findBySourceAccount_AccountNumberOrTargetAccount_AccountNumber(String sourceAccountNumber, String targetAccountNumber);
 }
